@@ -1,0 +1,28 @@
+.calendar{ 
+    max-width: 500px;
+    font: 100% system-ui;
+    border: solid 2px #111;
+    border-radius: 10px;
+    margin: 20px 30px;
+    padding: 10px;
+}
+
+.div1{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#day_one{
+    grid-column-start: 3;
+}
+
+#day_name{
+    background: #eee;
+}
+li{
+    padding: 3px;
+}

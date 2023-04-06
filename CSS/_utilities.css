@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+#container{
+    width: 100%;
+    bottom: 5%;
+    color: #999;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 200px;
+    position:fixed;
+}
+
+#div1{
+    height: 50px;
+    overflow: hidden;
+}
+
+#div1 > div > div{
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#div1 div:first-child{
+    animation: show 5s linear infinite;
+}
+
+#div1 div:first-child div{
+    background: #354cc2;
+}
+
+#div1 div:last-child div{
+    background: #dc143c;
+}
+#div1 div div{
+    background: #0e9f5e;
+}
+
+@keyframes show {
+    0%     {margin-top:-270px;} 
+    5%     {margin-top:-180px;}
+    33%    {margin-top:-180px;}
+    38%    {margin-top:-90px;}
+    66%    {margin-top:-90px;}
+    71%    {margin-top:-0px;}
+    99.99% {margin-top:-0px;}
+    100%   {margin-top:-270px;}
+}
+
